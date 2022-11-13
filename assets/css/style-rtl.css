@@ -1,0 +1,6 @@
+[dir="ltr"] .compoent-social{
+    text-align: right;
+}
+[dir="rtl"] .compoent-social{
+    text-align: left;
+}
