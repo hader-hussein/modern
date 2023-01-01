@@ -21,14 +21,18 @@
 
 //activ-link-nav//
 const currentlocation = location.href; 
-const menuitem = document.querySelectorAll('.navbar-index-nav .nav-link');
+const menuitem = document.querySelectorAll('.navbar-index-nav .nav-link,.nav-pills .nav-linke');
  const menulength = menuitem.length
 for (let i = 0; i<menulength; i++){
  if(menuitem[i].href === currentlocation) {
    menuitem[i].className = "active" 
     }
 }
-
+///
+$(document).ready(function() {
+  $('.navber-index .nav-item .nav-link').removeClass('active').removeAttr('aria-current');
+  $('a[href="' + location.pathname + '"]').closest('li').addClass('active').attr('aria-current', 'page'); 
+});
 //activ-link-nav//
 $('.owl-carousel').owlCarousel({
   autoplay:false,
@@ -51,8 +55,8 @@ autoplayHoverPause:false,
   }
   
 });
-$( ".owl-prev").html('<i class="fa-solid fa-arrow-right-long"></i>');
- $( ".owl-next").html('<i class="fa-solid fa-arrow-left-long"></i>');
+$( ".owl-prev").html('<img src="./assets/img/awwer.png">');
+ $( ".owl-next").html('<img src="./assets/img/awwer-r.png">');
  /*** */
  $(function () {
   $(document).scroll(function () {
