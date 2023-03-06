@@ -1,11 +1,6 @@
-[dir="ltr"] .compoent-social{
-    text-align: right;
-}
+
 [dir="rtl"] .compoent-social{
     text-align: left;
-}
-[dir="ltr"] .img-title{
-    left: -11%;
 }
 
 [dir="rtl"] .img-title{
@@ -14,12 +9,7 @@
 [dir="rtl"] .img-r-t{
     right: 0px;
 }
-[dir="ltr"] .compoent-img-about{
-    left: -9%;
-}
-[dir="ltr"]  .img-title-m{
-    left:-5%
-}
+
 [dir="rtl"]  .img-title-m{
     right:-5%
 }
@@ -27,35 +17,21 @@
     right: 0%;
     display: none !important;
 }
-[dir="ltr"] .row-media{
-    direction: rtl;
-}
+
 [dir="rtl"] .row-media{
     direction: ltr;
 }
 [dir="rtl"] .item{
     margin-right: 20px;
 }
-[dir="ltr"] .item{
-    margin-left: 20px;
-}
-[dir="ltr"] .row-card-about .col-card-about:first-child{
-    padding-left: 0px;
-}
-[dir="ltr"] .row-card-about .col-card-about:last-child{
-    padding-right: 0px;
-}
+
 [dir="rtl"] .row-card-about .col-card-about:first-child{
     padding-right: 0px;
 }
 [dir="rtl"] .row-card-about .col-card-about:last-child{
     padding-left: 0px;
 }
-[dir="ltr"] .row-card-services:nth-child(even) .img-fluid-services
-{
-    margin-right: auto;
 
-}
 [dir="rtl"] .row-card-services:nth-child(even) .img-fluid-services
 {
     margin-left: auto;
@@ -65,28 +41,42 @@
     left:18%;
 
 }
-[dir="ltr"] .owl-blog .owl-nav {
-    right:18%;
 
-}
-@media (max-width:768px) {
-    [dir="ltr"] .owl-blog .owl-nav {
-        right: 8%;
-        top: -23%;
-    }
-    
-}
-@media (max-width: 550px){
-[dir="ltr"] .owl-blog .owl-nav {
-    right: 3%;
-    top: -20%;
-}
-}
-[dir="ltr"] .img-p{
-    left: -6%;
 
-}
 [dir="rtl"] .img-p{
     right: -6%;
 
+}
+[dir="rtl"] .title-nav{
+    border-right: 1px solid #fff;
+}
+[dir="rtl"] .navbar-index-nav {
+    border-left: 1px solid #00293D;
+}
+[dir="rtl"]   .from-compoent-social ul li{
+    margin-right: 15px;
+}
+[dir="rtl"] .compoent-img-sevices{
+    transform: rotate(177deg);
+    left:0px;
+    float: left;
+}
+@media (max-width:1440px) {
+    [dir="rtl"] .compoent-img-sevices{
+        transform: rotate(183deg);
+        left: 9px;
+    }
+}
+
+  [dir="rtl"] .link-k-more:hover:before {
+    content: "ابدأ"
+  }
+  [dir="rtl"] .img-more {
+    transform: rotate(182deg)
+  }
+  [dir="rtl"] .compoent-social ul li{
+    margin-right: 10px;
+}
+[dir="rtl"] .row-leader .col-leader:first-child{
+    padding-right: 0px;
 }

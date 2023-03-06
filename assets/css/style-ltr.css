@@ -1,0 +1,72 @@
+[dir="ltr"] .compoent-social{
+     text-align: right;
+ }
+ [dir="ltr"] .img-title{
+     left: -11%;
+ }
+ [dir="ltr"] .compoent-img-about{
+     left: -9%;
+ }
+ [dir="ltr"]  .img-title-m{
+     left:-5%
+ }
+ [dir="ltr"] .row-media{
+     direction: rtl;
+ }
+ [dir="ltr"] .item{
+     margin-left: 20px;
+ }
+ [dir="ltr"] .row-card-about .col-card-about:first-child{
+     padding-left: 0px;
+ }
+ [dir="ltr"] .row-card-about .col-card-about:last-child{
+     padding-right: 0px;
+ }
+ [dir="ltr"] .row-card-services:nth-child(even) .img-fluid-services
+{
+    margin-right: auto;
+
+}
+[dir="ltr"] .owl-blog .owl-nav {
+     right:18%;
+ 
+ }
+ @media (max-width:768px) {
+     [dir="ltr"] .owl-blog .owl-nav {
+         right: 8%;
+         top: -23%;
+     }
+     
+ }
+ @media (max-width: 550px){
+ [dir="ltr"] .owl-blog .owl-nav {
+     right: 3%;
+     top: -20%;
+ }
+ }
+ [dir="ltr"] .img-p{
+     left: -6%;
+ 
+ }
+ [dir="ltr"] .title-nav{
+    border-left: 1px solid #fff;
+}
+[dir="ltr"] .navbar-index-nav {
+    border-right: 1px solid #00293D;
+}
+[dir="ltr"]   .from-compoent-social ul li{
+    margin-left: 15px;
+}
+[dir="ltr"] .compoent-img-sevices{
+    right: 0px;
+
+}
+[dir="ltr"] .link-k-more:hover:before {
+    content: "Get Start"
+  }
+  [dir="ltr"] .compoent-social ul li{
+    margin-left: 10px;
+}
+[dir="ltr"] .row-leader .col-leader:first-child{
+    padding-left: 0px;
+}

@@ -128,12 +128,6 @@ font-weight: 300;
     text-transform: uppercase;
 }
 
-[dir="ltr"] .title-nav{
-    border-left: 1px solid #fff;
-}
-[dir="rtl"] .title-nav{
-    border-right: 1px solid #fff;
-}
 .link-ar ,.link-ar:hover{
     color: #fff;
 
@@ -179,12 +173,7 @@ font-weight: 300;
 .navbar-index-nav .nav-link:hover{
     background-color: #d0d9dc57;
 }
-[dir="ltr"] .navbar-index-nav {
-    border-right: 1px solid #00293D;
-}
-[dir="rtl"] .navbar-index-nav {
-    border-left: 1px solid #00293D;
-}
+
 .img-index-convas{
     width: 45%;
     height: 175px;
@@ -209,12 +198,8 @@ font-weight: 300;
     align-items: center;
   
 }
-[dir="ltr"]   .from-compoent-social ul li{
-    margin-left: 15px;
-}
-[dir="rtl"]   .from-compoent-social ul li{
-    margin-right: 15px;
-}
+
+
 .from-compoent-social ul li:hover{
     background-color: #D0D9DC;
 }
@@ -293,7 +278,7 @@ height: 100%;
 }
 .img-over{
     position: absolute;
-    z-index: 2;
+    /* z-index: 2; */
     background-color: #00293D34;
     width: 100%;
     height: 100%;
@@ -432,21 +417,8 @@ position: relative;
     top: -3%;
     float: right;
 }
-[dir="ltr"] .compoent-img-sevices{
-    right: 0px;
 
-}
-[dir="rtl"] .compoent-img-sevices{
-    transform: rotate(177deg);
-    left:0px;
-    float: left;
-}
-@media (max-width:1440px) {
-    [dir="rtl"] .compoent-img-sevices{
-        transform: rotate(183deg);
-        left: 9px;
-    }
-}
+
 .component-leadership .compoent-img-sevices{
 top:-39%;
 width: 270px;
@@ -556,12 +528,8 @@ text-transform: uppercase;
     display: none
   }
   
-  [dir="ltr"] .link-k-more:hover:before {
-    content: "Get Start"
-  }
-  [dir="rtl"] .link-k-more:hover:before {
-    content: "ابدأ"
-  }
+  
+  
   .img-more{
     width: 14px !important;
     height: 9px !important;
@@ -571,9 +539,7 @@ text-transform: uppercase;
   .link-k-more:hover .img-more {
     display: block
   }
-  [dir="rtl"] .img-more {
-    transform: rotate(182deg)
-  }
+  
 /*end-services*/
 /*We Work With*/
 .component-work{
@@ -776,12 +742,7 @@ margin-top: 20px;
     justify-content: center;   
     
 }
-[dir="ltr"] .compoent-social ul li{
-    margin-left: 10px;
-}
-[dir="rtl"] .compoent-social ul li{
-    margin-right: 10px;
-}
+
 .compoent-social ul li:hover{
     background-color: #FEB334;
 }
@@ -831,12 +792,8 @@ line-height: 30px;
 margin: auto;
     }
 }
-[dir="ltr"] .row-leader .col-leader:first-child{
-    padding-left: 0px;
-}
-[dir="rtl"] .row-leader .col-leader:first-child{
-    padding-right: 0px;
-}
+
+
 .card-leader .card-body{
 padding-left:0px ;
 padding-right: 0px;
@@ -900,24 +857,25 @@ padding-right: 0px;
         opacity: 0.3;
     }
 
-[dir="ltr"] .card-employees:not(:last-child) .col-defintion-employees::after {
+[dir="ltr"] .card-employees:nth-child(odd) .col-defintion-employees::after {
   
-    background-image: url(../img/Path\ 11.png);
+    background-image: url(../img/Path\ 11.png) !important;
 }
-[dir="rtl"] .card-employees:not(:last-child) .col-defintion-employees::after {
-  
-    background-image: url(../img/Path\ 12.png);
-    margin-left: auto;
-    margin-right: 2%;
-}
-[dir="ltr"] .col-defintion-employees:nth-child(odd)::after
+[dir="ltr"] .card-employees:nth-child(even) .col-defintion-employees::after
 {
     background-image: url(../img/Path\ 12.png) !important;
     width: 77%;
     margin-left: auto !important;
     margin-right: 0px !important;
 }
-[dir="rtl"] .col-defintion-employees:nth-child(odd)::after
+[dir="rtl"] .card-employees:nth-child(odd) .col-defintion-employees::after {
+  
+    background-image: url(../img/Path\ 12.png);
+    margin-left: auto;
+    margin-right: 2%;
+}
+
+[dir="rtl"] .card-employees:nth-child(even) .col-defintion-employees::after
 {
     background-image: url(../img/Path\ 11.png) !important;
     width: 77%;
@@ -1483,3 +1441,38 @@ background-color: transparent;
 
 
 /*end-component-blog-index*/
+/*haeder*/
+.carousel-header{
+    height: 100vh;
+}
+.carousel-header .carousel-inner,.carousel-header .carousel-item img {
+    height: 100vh;
+}
+/*haeder*/
+.row-project-project .col:nth-child(1) .card-project img{
+  height: 266px;
+}
+.row-project-project .col:nth-child(4) .card-project img{
+    height: 266px;
+  }
+  .component-services-card .row-card-services:nth-child(even) .col-dete-services{
+order: 2;
+  }
+  .component-services-card .row-card-services:nth-child(even) .col-img-services{
+    order: 1;
+      }
+      .component-item-employes .card-employees:nth-child(even) .col-defintion-employees{
+        order: 1;
+      }
+      .component-item-employes .card-employees:nth-child(even) .col-img-employee{
+        order: 2;
+      }
+      .timeline-label .timeline-item:nth-child(even) .project-name{
+        order: 3;
+      }
+      .timeline-label .timeline-item:nth-child(even) .timeline-badge{
+        order: 2;
+      }
+      .timeline-label .timeline-item:nth-child(even) .pro{
+        order: 1;
+      }

@@ -22,6 +22,8 @@
     <!--stlye-css-->
     <link  href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/style-rtl.css" rel="stylesheet"/>
+    <link href="assets/css/style-ltr.css" rel="stylesheet"/>
+
 </head>
 <body>
     <!--nav-->
@@ -117,7 +119,7 @@
     <!--end-nav-->
     <!--start-header-->
     <header>
-       <div class="component-header">
+       <!-- <div class="component-header">
           <img src="./assets/img/hader.png" alt="header">
           <div class="img-over"></div>
           <div class="scrolldown">
@@ -125,8 +127,37 @@
                 <span></span>
             </a>
          </div>
-      
-       </div>
+         
+       </div> -->
+       <div id="carouselExampleIndicators" class="carousel carousel-header slide carousel-fade"  data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/hader.png" class="w-100"alt="header">
+            <div class="img-over"></div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/services-item.png" class="w-100"alt="header">
+          <div class="img-over"></div>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/services-item-2.png" class="w-100"alt="header">
+            <div class="img-over"></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </header>
     <!--end-header-->
     <!--about-us-->
@@ -204,7 +235,7 @@
             <div class="card row-card-services mb-5 pb-5">
                 <div class="row g-5 mx-0">
                 
-                  <div class="col-md-6">
+                  <div class="col-md-6 col-dete-services">
                     <div class="card-body p-0">
                       <img src="./assets/img/Design.png" alt="Design">
                       <h5 class="card-title">Design</h5>
@@ -215,7 +246,7 @@
                      
                     </div>
                   </div>
-                  <div class="col-md-6 d-flex justify-content-end">
+                  <div class="col-img-services col-md-6 d-flex justify-content-end">
                     <img src="./assets/img/services-item.png" class="img-fluid-services" alt="Design">
                   </div>
                 </div>
@@ -226,10 +257,8 @@
             <!--item-paint-->
             <div class="card row-card-services mb-5 pb-5">
                 <div class="row g-5 mx-0">
-                    <div class="col-md-6 d-flex justify-content-end">
-                        <img src="./assets/img/services-item-2.png" class="img-fluid-services" alt="paint">
-                    </div>
-                    <div class="col-md-6">
+                  
+                    <div class="col-md-6  col-dete-services">
                         <div class="card-body p-0">
                         <img src="./assets/img/paint.png" alt="paint">
                         <h5 class="card-title">paint</h5>
@@ -237,7 +266,9 @@
                         
                         </div>
                    </div>
-                 
+                   <div class="col-img-services  col-md-6 d-flex justify-content-end">
+                    <img src="./assets/img/services-item-2.png" class="img-fluid-services" alt="paint">
+                   </div>
                 </div>
             </div>
             <!--end-item-->
@@ -245,7 +276,7 @@
             <div class="card row-card-services mb-5 pb-5">
                 <div class="row g-5 mx-0">
                 
-                  <div class="col-md-6">
+                  <div class="col-md-6  col-dete-services">
                     <div class="card-body p-0">
                       <img src="./assets/img/plastering-2.png" alt="plastering">
                       <h5 class="card-title">plastering</h5>
@@ -255,7 +286,7 @@
                       </p>
                     </div>
                   </div>
-                  <div class="col-md-6 d-flex justify-content-end">
+                  <div class="col-img-services  col-md-6 d-flex justify-content-end">
                     <img src="./assets/img/plastering.png" class="img-fluid-services" alt="plastering">
                   </div>
                 </div>
@@ -264,10 +295,8 @@
             <!--item-tiles-->
             <div class="card row-card-services mb-5 pb-5">
                 <div class="row g-5 mx-0">
-                    <div class="col-md-6 d-flex justify-content-end">
-                        <img src="./assets/img/tiles.png" class="img-fluid-services" alt="tiles">
-                    </div>
-                    <div class="col-md-6">
+                  
+                    <div class="col-md-6  col-dete-services">
                         <div class="card-body p-0">
                             <img src="./assets/img/tiles-2.png" alt="tiles">
                             <h5 class="card-title">tiles</h5>
@@ -276,6 +305,9 @@
                                 our customer
                             </p>
                         </div>
+                    </div>
+                    <div class="col-img-services  col-md-6 d-flex justify-content-end">
+                        <img src="./assets/img/tiles.png" class="img-fluid-services" alt="tiles">
                     </div>
                 </div>
                 <img class="design-img-sevices-right d-none d-md-block" src="./assets/img/lader-shap.png" alt="content">
@@ -329,6 +361,11 @@
                         </div>
                     </div>
                     <div class="row timeline-item justify-content-center align-items-start pt-5 mt-5 mx-0">
+                        <div class="col-md-5 project-name text-start">Project 2</div>
+                        <div class="col-md-2 timeline-badge text-center d-none d-md-block">
+                            <img class="img-ellips"src="./assets/img/Ellipse.png" alt="Ellipse">
+
+                        </div>
                         <div class="col-md-5 pro">
                             <div class="project-defintion p-4">
                                 <p>
@@ -349,11 +386,8 @@
                             
                         </div>
                      
-                        <div class="col-md-2 timeline-badge text-center d-none d-md-block">
-                            <img class="img-ellips"src="./assets/img/Ellipse.png" alt="Ellipse">
-
-                        </div>
-                        <div class="col-md-5 project-name text-start">Project 2</div>
+                        
+                       
                     </div>
                     <div class="row timeline-item justify-content-center align-items-start pt-5 mt-5 mx-0">
                         <div class="col-md-5 project-name">Project 3</div>
